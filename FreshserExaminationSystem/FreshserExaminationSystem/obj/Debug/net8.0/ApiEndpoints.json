@@ -1,0 +1,340 @@
+[
+  {
+    "ContainingType": "FreshserExaminationSystem.Controllers.AdminController",
+    "Method": "AddQuestions",
+    "RelativePath": "api/admin/add-questions",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "questions",
+        "Type": "System.Collections.Generic.List\u00601[[FreshserExaminationSystem.Models.Question, FreshserExaminationSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FreshserExaminationSystem.Controllers.AdminController",
+    "Method": "GetAttemptDetail",
+    "RelativePath": "api/admin/attempt/{attemptId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "attemptId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FreshserExaminationSystem.Controllers.AdminController",
+    "Method": "GetAllAttempts",
+    "RelativePath": "api/admin/attempts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FreshserExaminationSystem.Controllers.AdminController",
+    "Method": "CreateExam",
+    "RelativePath": "api/admin/create-exam",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "exam",
+        "Type": "FreshserExaminationSystem.Models.Exam",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FreshserExaminationSystem.Controllers.AdminController",
+    "Method": "CreateUser",
+    "RelativePath": "api/admin/create-user",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "FreshserExaminationSystem.Models.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FreshserExaminationSystem.Controllers.AdminController",
+    "Method": "GetAllEnrollments",
+    "RelativePath": "api/admin/enrollments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FreshserExaminationSystem.Controllers.AdminController",
+    "Method": "GetByExamId",
+    "RelativePath": "api/admin/enrollments/exam/{examId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "examId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FreshserExaminationSystem.Controllers.AdminController",
+    "Method": "GetByUserId",
+    "RelativePath": "api/admin/enrollments/user/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FreshserExaminationSystem.Controllers.AdminController",
+    "Method": "EvaluateAttempt",
+    "RelativePath": "api/admin/evaluate/{attemptId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "attemptId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "evaluations",
+        "Type": "System.Collections.Generic.List\u00601[[FreshserExaminationSystem.Controllers.AdminController\u002BEvaluatedAnswer, FreshserExaminationSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FreshserExaminationSystem.Controllers.AdminController",
+    "Method": "GetExams",
+    "RelativePath": "api/admin/exams",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FreshserExaminationSystem.Controllers.AdminController",
+    "Method": "PublishExam",
+    "RelativePath": "api/admin/publish-exam/{examId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "examId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FreshserExaminationSystem.Controllers.LoginController",
+    "Method": "login",
+    "RelativePath": "api/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "x",
+        "Type": "FreshserExaminationSystem.Models.Login",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FreshserExaminationSystem.Controllers.UserController",
+    "Method": "GetAttemptStatus",
+    "RelativePath": "api/user/attempt-status/{enrollmentId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "enrollmentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FreshserExaminationSystem.Controllers.UserController",
+    "Method": "GetAttemptDetailForUser",
+    "RelativePath": "api/user/attempt/{attemptId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "attemptId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FreshserExaminationSystem.Controllers.UserController",
+    "Method": "CompleteAttempt",
+    "RelativePath": "api/user/complete-attempt/{attemptId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "attemptId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FreshserExaminationSystem.Controllers.UserController",
+    "Method": "Enroll",
+    "RelativePath": "api/user/enroll",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "examId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FreshserExaminationSystem.Controllers.UserController",
+    "Method": "GetPublishedExams",
+    "RelativePath": "api/user/exams",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FreshserExaminationSystem.Controllers.UserController",
+    "Method": "GetMyAttempts",
+    "RelativePath": "api/user/my-attempts/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FreshserExaminationSystem.Controllers.UserController",
+    "Method": "GetMyEnrollments",
+    "RelativePath": "api/user/my-enrollments/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FreshserExaminationSystem.Controllers.UserController",
+    "Method": "GetQuestions",
+    "RelativePath": "api/user/questions/{examId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "examId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FreshserExaminationSystem.Controllers.UserController",
+    "Method": "StartAttempt",
+    "RelativePath": "api/user/start",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "enrollmentId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FreshserExaminationSystem.Controllers.UserController",
+    "Method": "SubmitAll",
+    "RelativePath": "api/user/submit-all",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "FreshserExaminationSystem.Controllers.UserController\u002BSubmitAllDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
